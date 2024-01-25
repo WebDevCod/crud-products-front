@@ -2,7 +2,7 @@
 import { useState } from "react";
 import useCreateItem from "../hooks/useCreateItem";
 
-function CreateButton({ reload }) {
+function CreateButton({ reload, loading }) {
   const [showModal, setshowModal] = useState();
   const [formData, setFormData] = useState({
     name: "",
@@ -47,7 +47,7 @@ function CreateButton({ reload }) {
           alignItems: "center",
         }}
       >
-        <button onClick={handleCreateProduct}>Create new product</button>
+        <button disabled={loading} onClick={handleCreateProduct}>Create new product</button>
       </div>
 
       <dialog open={showModal}>

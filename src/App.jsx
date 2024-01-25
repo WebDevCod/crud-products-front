@@ -11,7 +11,7 @@ function App() {
       <div className="container">
         <Table data={resp} reload={reload}></Table>
         {loading && <article aria-busy="true"></article>}
-        <CreateButton reload={reload} />
+        <CreateButton reload={reload} loading={loading} />
         <Toaster richColors />
       </div>
     </>
