@@ -70,6 +70,7 @@ function CreateButton({ reload, loading }) {
                   placeholder="Product name"
                   value={formData.name}
                   onChange={handleInputChange}
+                  maxLength={30}
                   required
                 />
               </label>

@@ -51,6 +51,7 @@ function UpdateModal({ product, onClose, reload }) {
                   placeholder="Product name"
                   value={formData.name}
                   onChange={handleInputChange}
+                  maxLength={30}
                   required
                 />
               </label>
